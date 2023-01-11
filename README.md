@@ -1,2 +1,2 @@
 # otus-css-Markarian-Tridrikh
-Fisrt step 
+First step 
