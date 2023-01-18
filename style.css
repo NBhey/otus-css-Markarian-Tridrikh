@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 87px;
+    line-height: 104px;
+    text-align: center;
+    padding-top:130px; 
+}
+
+.header {
+    background-image:url(https://downloader.disk.yandex.ru/preview/b95127f0f5700a7cc9630b203cbe372460134fb9b26fa178bfcb46eb42bc4ef5/63c6b364/4I_ppLJugcUD9Q9qHjBtDKZF17KXgXrpGHZtP8dl7dvLl2hNHWU2XRaswxHuk8WK1YCtdfAhnq8nzdJddRGo2Q%3D%3D?uid=0&filename=image.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=0&tknv=v2&size=2048x2048);
+    background-size: cover;
+    height: 630px;
+    width:1065px;
+    background-color: #eee;
+    background-position: center;
+    margin-left: 187px;
+    margin-top: 135px;
+    background-repeat: no-repeat;
+    
+}
+
+.area_in_pic_1 {
+    border: 1px solid white;
+    background-color: white;
+    width:557px;
+    height:355px;
+    margin-left: 254px;
+    margin-top: 137px;
+    position: absolute;
+}
+.text_in_area_1 {
+    width:204px;
+    height:22px;
+    margin-top: 18px;  
+    margin-left: 165px;
+    text-align: center;
+}
+
