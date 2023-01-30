@@ -2,45 +2,66 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family:'Roboto', sans-serif, 'Butler', serif;
+    font-size: 12px;
+    line-height: normal;
 }
-
-h1 {    
+@font-face {
+    font-family: 'Butler';
+    src: local('Butler'),
+        url('./fonts/woff2/Butler.woff2') format('woff2'),
+        url('./fonts/woff/Butler.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+li{
+    font-family: 'Butler', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 41px;
+}
+.font_roboto_700 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 21px;
+    /* text-align: center; */
+}
+.font_roboto_500 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 21px;
+}
+.font_roboto_400 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19px;
+}
+.butler_header {
+    font-family: 'Butler', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 87px;
-    line-height: 104px;
-    text-align: center;
-    padding-top:130px; 
+    line-height: 104px; 
 }
-
-.header {
-    background-image:url(https://downloader.disk.yandex.ru/preview/b95127f0f5700a7cc9630b203cbe372460134fb9b26fa178bfcb46eb42bc4ef5/63c6b364/4I_ppLJugcUD9Q9qHjBtDKZF17KXgXrpGHZtP8dl7dvLl2hNHWU2XRaswxHuk8WK1YCtdfAhnq8nzdJddRGo2Q%3D%3D?uid=0&filename=image.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=0&tknv=v2&size=2048x2048);
-    background-size: cover;
-    height: 630px;
-    width:1065px;
-    background-color: #eee;
-    background-position: center;
-    margin-left: 187px;
-    margin-top: 135px;
-    background-repeat: no-repeat;
-    
+.text {
+    font-family: 'Butler', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
 }
-
-.area_in_pic_1 {
-    border: 1px solid white;
-    background-color: white;
-    width:557px;
-    height:355px;
-    margin-left: 254px;
-    margin-top: 137px;
-    position: absolute;
+.strengths {
+    font-family: 'Butler', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 92px;
+    line-height: 110px;
 }
-
-.text_in_area_1 {
-    width:204px;
-    height:22px;
-    margin-top: 18px;  
-    margin-left: 165px;
-    text-align: center;
-}
-
