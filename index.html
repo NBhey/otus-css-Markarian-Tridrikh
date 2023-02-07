@@ -12,12 +12,14 @@
     <title>Mod Katya</title>
 </head>
 <body>
-    <header>
-        <img src="./img/Group 24.png" alt="menu">
+<!-- header - блок в котором есть такие элементы,как img и  div -->
+    <header> 
+        <img src="./img/group24.png" alt="menu">
+        <!-- div элемент который имеет в себе элементы img, h1 и p, у h1 и p модификаторы т.к. характерзиуют стиль поэтому исп. 'имя блока_имя модификатора' -->
         <div>
             <img src="./img/image.jpg" alt="Mod Studio">
-            <h1 class="butler_header" style="text-align: center;">Mod Studio</h1>
-            <p class="font_roboto_700" style="text-align:center">Modern Web Studio</p>
+            <h1 class="header_h1">Mod Studio</h1>
+            <p class="header_p">Modern Web Studio</p>
         </div>
     </header> 
     <section>
@@ -25,27 +27,29 @@
             <img src="/img/image2.jpg" alt="Katya Mills">
         </div>
         <div>
-            <h2 class="butler_header">Katya <br> Mills</h2>
-            <p class="font_roboto_500">Art Director <br> Scenography/Styling/ 
+            <h3 class="section1_h3">Katya <br> Mills</h3>
+            <p class="section1_p">Art Director <br> Scenography/Styling/ 
                 Creative Photography/Design
             </p>
-            <blockquote class="text">
+            <!-- здесь указал в rem для примера того, что понял. HTML по умолчанию font-size 16px следовательно 2*16=32px, 
+                а унаследовал от html потому что родителям ближайшем (section и div)я не указал фонт сайз -->
+            <blockquote class="section1_blockquote ">
                 "The more I deal with the work as something that is my own, 
                 as something that is personal, 
                 the more successful it is."
             </blockquote>            
         </div>
         <div>
-            <h2 class="font_roboto_700">Biography</h2>
+            <h2 class="section1_h2">Biography</h2>
         </div>
     </section>
     <section>
         <div>
             <img src="./img/image3.jpg" alt="Jess Wonder">
-            <p class="font_roboto_400" style="font-weight: 700; text-transform: uppercase;">Jess Wonder</p>
-            <p class="font_roboto_400">
-                From/ Be more flower <br>
-                Skills/ Design Strategy / Marketing
+            <h3 class="section2_h3">Jess Wonder</h3>
+            <p class="section2_p">
+                <b>From/</b> Be more flower <br>
+                <b>Skills/</b> Design Strategy / Marketing
             </p>   
             
         </div>
@@ -54,69 +58,70 @@
         </div>
         <div>
             <img src="/img/image4.jpg" alt="Kameron Clein">
-            <p class="font_roboto_400" style="font-weight: 700; text-transform: uppercase;">Kameron Clein </p>
-            <p class="font_roboto_400"> 
-                From/ Be more flower <br>
-                Skills/ Design Strategy / Marketing
+            <h3 class="section2_h3">Kameron Clein </h3>
+            <p class="section2_p"> 
+                <b>From/</b>  Be more flower <br>
+                <b>Skills/</b> Design Strategy / Marketing
             </p>
         </div>
         <div>
             <img src="/img/image5.jpg" alt="Louisse Red">
-            <p class="font_roboto_400" style="font-weight: 700; text-transform: uppercase;">Louisse Red </p>
-            <p class="font_roboto_400">
-                From/ Be more flower <br>
-                Skills/ Design Strategy / Marketing
+            <h3 class="section2_h3">Louisse Red </h3>
+            <p class="section2_p">
+                <b>From/</b> Be more flower <br>
+                <b>Skills/</b> Design Strategy / Marketing
             </p>
         </div>
     </section>
     <section>
         <div>
-            <h2 class="font_roboto_700"> Testimonials</h2>
+            <h2 class="section3_h2"> Testimonials</h2>
         </div>
         <nav>
             <p>
-                <span class="font_roboto_400" style="font-weight: 700; text-transform:capitalize;"> Creativity</span> <br>
-                <a href="#" class="font_roboto_400">www.whitepapers.com</a>
+                <span class="section3-nav_span"> Creativity</span> <br>
+                <a href="#" class="section3-nav_a">www.whitepapers.com</a>
             </p>
             <p>
-                <span class="font_roboto_400" style="font-weight: 700; text-transform:capitalize;"> Creativity</span> <br>
-                <a href="#" class="font_roboto_400">www.whitepapers.com</a>
+                <span class="section3-nav_span"> Creativity</span> <br>
+                <a href="#" class="section3-nav_a">www.whitepapers.com</a>
             </p>
             <p>
-                <span class="font_roboto_400" style="font-weight: 700; text-transform:capitalize;">Website</span> <br>
-                <a href="#" class="font_roboto_400">www.whitepapers.com</a>
+                <span class="section3-nav_span">Website</span> <br>
+                <a href="#" class="section3-nav_a">www.whitepapers.com</a>
             </p>
         </nav>
         <div>
             <img src="/img/image6.jpg" alt="Testimonials">
         </div>
         <div>
-            <p class="text" style="text-align: center;"> I just really want to do good work and work with some great people, people who challange me.</p>
+            <p class="section-div_p"> I just really want to do good work and work with some great people, people who challange me.</p>
         </div>
     </section>
     <section>
         <div>
-            <h2 class="font_roboto_700">Strong points</h2>
+            <h2 class="section4_h2">Strong points</h2>
         </div>
         <div>
             <img src="./img/image8.jpg" alt="Interiors">
             <img src="./img/image9.jpg" alt="Interiors">
         </div>
         <div>
-            <h3 class="strengths">Strengths</h3>
+            <h3 class="section4_h3">Strengths</h3>
+            <!-- а можно просто ul дать класс а не каждой строчке -->
             <ul>
-                <li>Interiors</li>
-                <li>Outdoors</li>
-                <li>Portraits</li>
-                <li>Styling</li>
-                <li>Events</li>
-                <li>Architecture</li>
-                <li>Design</li>
-                <li>Celebrations</li>
-                <li>Artistic</li>
-                <li>Fashion</li>
-                <li>Nature</li>
-                <li>Creativity</li>
+                <li class="section4-div_li">Interiors</li>
+                <li class="section4-div_li">Outdoors</li>
+                <li class="section4-div_li">Portraits</li>
+                <li class="section4-div_li">Styling</li>
+                <li class="section4-div_li">Events</li>
+                <li class="section4-div_li">Architecture</li>
+                <li class="section4-div_li">Design</li>
+                <li class="section4-div_li">Celebrations</li>
+                <li class="section4-div_li">Artistic</li>
+                <li class="section4-div_li">Fashion</li>
+                <li class="section4-div_li">Nature</li>
+                <li class="section4-div_li">Creativity</li>
             </ul>
         </div>
         <div>
