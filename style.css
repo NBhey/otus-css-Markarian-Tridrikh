@@ -10,15 +10,35 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
-    line-height: normal;
+}
+
+.header__logo {
+    position: absolute;
+    top:55px;
+    left: 703px;
+}
+.header-div {
+    margin: 135px auto;
+    padding: 137px 254px;
+    height: 630px;
+    width: 73.96%;
+    background-image: url(./img/image.jpg);
+    background-repeat: no-repeat;
+}
+.header-div__contant {
+    padding-top: 130px;
+    padding-bottom: 130px;
+    background-color: #ffffff;
+    height:355px ;
+    /* height: 56.35%; */
+    width: 100%;
+    text-align: center;
 }
 .header_h1 {
     font-family: 'Butler', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 87px;
-    text-align: center;
     line-height: 104px; 
 }
 .header_p {
@@ -27,7 +47,6 @@
     font-style: normal;
     font-size: 18px;
     line-height: 21px;
-    text-align: center;
 }
 .section1_h3 {
     font-family: 'Butler', serif;
