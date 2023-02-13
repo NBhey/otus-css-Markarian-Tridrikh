@@ -11,35 +11,40 @@
     box-sizing: border-box;
     margin: 0;
 }
-
 .header__logo {
     position: absolute;
     top:55px;
     left: 703px;
 }
 .header-div {
+    position: relative;
     margin: 135px auto;
     padding: 137px 254px;
     height: 630px;
     width: 73.96%;
     background-image: url(./img/image.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
 }
-.header-div__contant {
-    padding-top: 130px;
-    padding-bottom: 130px;
-    background-color: #ffffff;
-    height:355px ;
-    /* height: 56.35%; */
-    width: 100%;
+.header-div__content {
+    padding-top: 137px;
+    padding-bottom: 90px;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    background-color: white;    
+    width: 52.3%;
     text-align: center;
 }
 .header_h1 {
+    margin-bottom: 18px;
     font-family: 'Butler', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 87px;
     line-height: 104px; 
+    margin-bottom: 18px;
 }
 .header_p {
     font-family: 'Roboto', sans-serif;
