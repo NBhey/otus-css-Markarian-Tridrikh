@@ -1,46 +1,126 @@
+@font-face {
+    font-family: 'Butler';
+    src: local('Butler'),
+        url('./fonts/woff2/Butler.woff2') format('woff2'),
+        url('./fonts/woff/Butler.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    line-height: normal;
 }
-
-h1 {    
+.header_h1 {
+    font-family: 'Butler', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 87px;
-    line-height: 104px;
     text-align: center;
-    padding-top:130px; 
+    line-height: 104px; 
 }
-
-.header {
-    background-image:url(https://downloader.disk.yandex.ru/preview/b95127f0f5700a7cc9630b203cbe372460134fb9b26fa178bfcb46eb42bc4ef5/63c6b364/4I_ppLJugcUD9Q9qHjBtDKZF17KXgXrpGHZtP8dl7dvLl2hNHWU2XRaswxHuk8WK1YCtdfAhnq8nzdJddRGo2Q%3D%3D?uid=0&filename=image.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=0&tknv=v2&size=2048x2048);
-    background-size: cover;
-    height: 630px;
-    width:1065px;
-    background-color: #eee;
-    background-position: center;
-    margin-left: 187px;
-    margin-top: 135px;
-    background-repeat: no-repeat;
-    
-}
-
-.area_in_pic_1 {
-    border: 1px solid white;
-    background-color: white;
-    width:557px;
-    height:355px;
-    margin-left: 254px;
-    margin-top: 137px;
-    position: absolute;
-}
-
-.text_in_area_1 {
-    width:204px;
-    height:22px;
-    margin-top: 18px;  
-    margin-left: 165px;
+.header_p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 21px;
     text-align: center;
 }
-
+.section1_h3 {
+    font-family: 'Butler', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 87px;
+    line-height: 104px; 
+}
+.section1_p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 21px;
+}
+.section1_blockquote {
+    font-family: 'Butler', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 38px;
+}
+.section1_h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 21px;
+}
+.section2_h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.section2_p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19px;
+}
+.section3_h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 21px;
+}
+.section3-nav_span {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 700;
+    text-transform:capitalize;
+}
+.section3-nav_a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19px;
+}
+.section3-div_p {
+    font-family: 'Butler';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+}
+.section4_h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 21px;
+}
+.section4_h3 {
+    font-family: 'Butler', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 92px;
+    line-height: 110px;
+}
+.section4-div_li {
+    font-family: 'Butler', serif;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 1.21;
+}
