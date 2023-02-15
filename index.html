@@ -8,15 +8,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-
     <title>Mod Katya</title>
 </head>
 <body>
-    <header> 
-        <div>
-            <img class="header__logo" src="./img/group24.png" alt="menu">
+    <header class="header"> 
+        <div class="header__logo">
+            <img src="./img/group24.png" alt="menu">
         </div>
-        
         <div class="header-div">
             <div class="header-div__content"> 
                 <h1 class="header_h1">Mod Studio</h1>
@@ -24,25 +22,23 @@
             </div>
         </div>
     </header> 
-    <section>
-        <div>
+    <section class="biography" >
+        <div class="biography__div__img">
             <img src="./img/image2.jpg" alt="Katya Mills">
         </div>
-        <div>
-            <h3 class="section1_h3">Katya <br> Mills</h3>
-            <p class="section1_p">Art Director <br> Scenography/Styling/ 
+        <div class="biography__hero">
+            <h3 class="biography__name section1_h3">Katya <br> Mills</h3>
+            <p class="biography__skills section1_p">Art Director <br> Scenography/Styling/ 
                 Creative Photography/Design
             </p>
-            <!-- здесь указал в rem для примера того, что понял. HTML по умолчанию font-size 16px следовательно 2*16=32px, 
-                а унаследовал от html потому что родителям ближайшем (section и div)я не указал фонт сайз -->
-            <blockquote class="section1_blockquote ">
+            <blockquote class="biography__blockquote section1_blockquote ">
                 "The more I deal with the work as something that is my own, 
                 as something that is personal, 
                 the more successful it is."
             </blockquote>            
         </div>
-        <div>
-            <h2 class="section1_h2">Biography</h2>
+        <div class="biography__title">
+            <h2 class="biography__title_text">Biography</h2>
         </div>
     </section>
     <section>
@@ -53,7 +49,6 @@
                 <b>From/</b> Be more flower <br>
                 <b>Skills/</b> Design Strategy / Marketing
             </p>   
-            
         </div>
         <div>
             <h2 class="font_roboto_700">Designers</h2>
