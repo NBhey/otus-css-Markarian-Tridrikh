@@ -22,7 +22,7 @@
     margin-bottom: 65px;
     width: 2.36%;
 }
-.header-div {
+.header-area {
     position: relative;
     margin: 0 auto;
     padding: 137px 254px;
@@ -32,7 +32,7 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-.header-div__content {
+.header-area__content {
     padding-top: 137px;
     padding-bottom: 90px;
     position: absolute;
@@ -43,7 +43,7 @@
     width: 52.3%;
     text-align: center;
 }
-.header_h1 {
+.header-area_h1 {
     margin-bottom: 18px;
     font-family: 'Butler', serif;
     font-style: normal;
@@ -51,7 +51,7 @@
     font-size: 87px;
     line-height: 104px; 
 }
-.header_p {
+.header-area_p {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -61,73 +61,17 @@
 .biography {
     position: relative;
     margin: auto;
-    padding-left: 134px;
     display: flex;
     margin-bottom: 169px;
-    width: 85.07%; 
+    max-width: 1175px;
     height: 840px;
     justify-content: space-between;
-    gap: 147px;
-    /* background-color: green; */
-}
-.biography__div__img {
-    height: 100%;
-    width: 47.06%;
-}
-.biography__hero {
-    width: 52.94%;
-    height: 70.48%;
-    align-self: center;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly; 
-    align-items: flex-start;
-    gap: 54px;
-}
-.biography__name {
-    width: 88%;
-    height:44.09%;
-    /* т.к. самый большой текст я думаю, что при сжатии он должен сжиматься первым */
-    flex-shrink: 2;
-}
-.biography__skills {
-    width: 100%;
-    height: 10.14%;
-}
-.biography__blockquote {
-    width:87.37%;
-    height:31.93%;
-    flex-shrink: 1;
-}
-.section1_h3 {
-    font-family: 'Butler', serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 87px;
-    line-height: 104px; 
-}
-.section1_p {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 18px;
-    line-height: 21px;
-}
-
-.section1_blockquote {
-    font-family: 'Butler', serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 2rem;
-    line-height: 38px;
+    gap: 146px;
 }
 .biography__title {
-    margin: 0 auto;
     position: absolute;
-    top: 730px;
-    left: 1549px;
-    width: 7.57%;
+    bottom: 3px;
+    right: 0px;
 }
 .biography__title_text {
     font-family: 'Roboto', sans-serif;
@@ -137,6 +81,64 @@
     line-height: 21px;
     transform: rotate(-90deg);
 }
+.biography__img {
+    max-height: 840px;
+    min-width: 47.06%;
+}
+.biography__hero {
+    width: 52.94%;
+    align-self: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;  
+}
+.biography__name {
+    width: 88%;
+    height: 261px;
+}
+.biography__name-text {
+    font-family: 'Butler', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 87px;
+    line-height: 104px; 
+}
+.biography__skills {
+    position: relative;
+    width: 100%;
+    height: 60px;   
+    margin-bottom: 82px;
+}
+/* Увидел эту фишку когда в ДОКе лазил, ну а на макете она есть) поэтому если что не так,
+я не специально =) */
+.biography__skills::after{
+    content: " ";
+    position: absolute;
+    top: 107px;
+    left: 0px;
+    width: 14px;
+    height: 4px;
+    background: #000;
+}
+.section1_p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 21px;
+}
+.biography__blockquote {
+    width:87.37%;
+}
+.section1_blockquote {
+    font-family: 'Butler', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 38px;
+}
+
 .section2_h3 {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
