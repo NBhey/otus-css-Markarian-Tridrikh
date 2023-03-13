@@ -110,8 +110,6 @@
     height: 60px;   
     margin-bottom: 82px;
 }
-/* Увидел эту фишку когда в ДОКе лазил, ну а на макете она есть) поэтому если что не так,
-я не специально =) */
 .biography__skills::after{
     content: " ";
     position: absolute;
@@ -139,7 +137,7 @@
     line-height: 38px;
 }
 
-.section2_h3 {
+.biography_person {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -148,19 +146,41 @@
     font-weight: 700;
     text-transform: uppercase;
 }
-.section2_p {
+.biography_person-skill {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
     line-height: 19px;
 }
-.section3_h2 {
+.testimonials {
+    margin: 0 auto;
+}
+.testimonials__title {
+    padding-bottom: 31px;
+    padding-left:178px;
+}
+.testimonials__title_text {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 18px;
     line-height: 21px;
+}
+.testimonials-wrap {
+    display: grid;
+    grid-template-columns: 50px 1fr 1fr;
+    padding-left:98px;
+}
+.testimonials__link {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: end;
+   
+}
+.testimonials-item {
+    transform-origin:top left;
+    transform:rotate(-90deg);
 }
 .section3-nav_span {
     font-family: 'Roboto', sans-serif;
@@ -177,6 +197,14 @@
     font-style: normal;
     font-size: 16px;
     line-height: 19px;
+}
+.inspiration {
+    display: inline;
+    align-items: center;
+    justify-items: center;
+}
+.inspiration-text {
+    width: 206px;
 }
 .section3-div_p {
     font-family: 'Butler';
