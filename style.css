@@ -181,6 +181,7 @@
         align-self: center;
         max-height: 580px;
         width: 60%;
+        padding-top: 10px;
     }
     .biography-wrap__hero {
         order:0;
@@ -193,6 +194,10 @@
     }
     .hero__blockquote::before {
         display: none;
+    }
+    .hero__blockquote {
+        max-width: 80%;
+        text-align: center;
     }
 }
 .designers-wrap {
@@ -268,12 +273,24 @@
     .designers-wrap {
         overflow-x: scroll;
         gap: 20px;
+        grid-template-areas: 
+      ". . ."
+      "first second third";
     }
     .designers__title {
         position: absolute;
         transform:none;
         right: 0;
         top: 0;
+    }
+    .actor-first_pic {
+        max-height:442px;
+    }
+    .designers__second {
+        align-self: end;
+    }
+    .designers__third {
+        align-self: end;
     }
 }
 .testimonials-wrap {
@@ -310,6 +327,17 @@
 .testimonials__item {
     transform-origin:top left;
     transform:rotate(-90deg);
+    transition: all .5s;
+}
+.testimonials__item:hover {
+    background-color: pink;
+    border-radius: 3px;
+    cursor: pointer;
+    /* padding: 3px; */
+    font-size: 20px;
+}
+.testimonials__item:focus {
+    outline: 1px solid black;
 }
 .testimonials__item {
     font-family: 'Roboto', sans-serif;
@@ -328,6 +356,7 @@
     line-height: 19px;
     font-weight: normal;
     text-transform:none;
+    
 }
 .testimonials_img {
     padding-left: 31px;
@@ -346,6 +375,13 @@
     font-size: 32px;
     line-height: 38px;
     text-align: center;
+}
+.invis {
+    transition: all 0.8s ease;
+}
+.invis:hover {
+    padding-top: 30px;
+    transform: scale(1.2);
 }
 @media screen and (max-width: 768px) {
     .testimonials-name {
