@@ -1,2 +1,3 @@
 # otus-css-Markarian-Tridrikh
-First step 
+
+В файле test.html находится секция выполненная в Bootstrap
