@@ -1,0 +1,19 @@
+{
+  "name": "otus-css-markarian-tridrikh-1",
+  "version": "1.0.0",
+  "description": "В файле test.html находится секция выполненная в Bootstrap\r В файле test2.html находится секция выполненная в tailwind",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^14.1.1",
+    "lodash": "^4.17.21",
+    "webpack": "^5.79.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.7"
+  }
+}
