@@ -49,7 +49,7 @@
     background-color:white;
     text-align: center;
 }
-.area_studio {
+.area__studio {
     position: absolute;
     left: 50%;
     top:50%;
@@ -95,7 +95,7 @@
         position: static;
         height: 100%;
     }
-    .area_studio {
+    .area__studio {
         transform: none;
         width: 100%;
         position: static;
@@ -105,11 +105,13 @@
         padding-bottom: 163px;
     }
 }
-.biography-wrap {
+.biography__box {
     position: relative;
     display: flex;
     flex-direction: row;
     gap: 145px;
+}
+.biography-wrap {
     margin: auto;
     margin-bottom: 169px;
     max-width: 1175px;
@@ -166,7 +168,7 @@
     background: #000;
 }
 @media screen and (max-width: 768px) {
-    .biography-wrap{
+    .biography__box{
         flex-direction: column;
         gap: 0px;
         margin-bottom: 72px;
@@ -176,7 +178,7 @@
         right: 0px;
         transform: none;
     }
-    .biography-photo {
+    .biography-wrap__photo {
         order: 1;
         align-self: center;
         max-height: 580px;
@@ -189,7 +191,7 @@
         gap: 10px;
         align-items:center;
     }
-    .hero-br {
+    .hero__br {
         display: none;
     }
     .hero__blockquote::before {
