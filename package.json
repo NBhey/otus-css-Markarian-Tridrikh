@@ -10,8 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "http-server": "^14.1.1",
-    "lodash": "^4.17.21",
-    "webpack": "^5.79.0"
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
     "prettier": "^2.8.7"
