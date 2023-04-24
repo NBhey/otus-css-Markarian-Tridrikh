@@ -1,5 +1,5 @@
-import "./style/style.css";
+import "./style/style.css"
 
 
-//import lodash from ('lodash')
+
 

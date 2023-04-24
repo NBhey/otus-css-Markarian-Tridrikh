@@ -1,8 +1,8 @@
 @font-face {
     font-family: 'Butler';
     src: local('Butler'),
-        url('./fonts/woff2/Butler.woff2') format('woff2'),
-        url('./fonts/woff/Butler.woff') format('woff');
+        url('../fonts/woff2/Butler.woff2') format('woff2'),
+        url('../fonts/woff/Butler.woff') format('woff');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -34,7 +34,7 @@
 }
 .area-container {
     background-color: rgb(246, 203, 189);
-    background-image:url(./img/image.jpg);
+    background-image:url(../img/image.jpg);
     background-repeat: no-repeat;
     background-size:cover;
 }
