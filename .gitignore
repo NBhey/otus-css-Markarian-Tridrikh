@@ -1,5 +1,5 @@
 node_modules
 Test.html
 Test2.html
-dist
-prod
+./dist
+./prod
