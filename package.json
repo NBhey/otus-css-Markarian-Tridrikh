@@ -4,8 +4,10 @@
   "description": "В файле test.html находится секция выполненная в Bootstrap\r В файле test2.html находится секция выполненная в tailwind",
   "main": "index.js",
   "scripts": {
-    "start": "webpack serve --mode development -c webpack.config.js",
-    "build": "webpack --mode production"
+    "start": "webpack serve --mode development",
+    "build-dev": "webpack --mode development -c webpack.config.js",
+    "build-prod": "webpack -c webpack.config.prod.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
