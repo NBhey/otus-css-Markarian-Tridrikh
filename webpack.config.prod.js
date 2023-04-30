@@ -19,8 +19,18 @@ module.exports = {
     module: {
         rules: [
         {
-            test: /\.(sass|css)$/i,
-            use: ["style-loader", "css-loader" ],
+            test: /\.(sass|css|scss)$/i,
+            use: ["style-loader", "css-loader",
+                { loader: "postcss-loader",
+                options: {
+                  postcssOptions: {
+                    plugins: [
+                        "postcss-deadcss",
+                         ],
+                        }, 
+                    },
+                },
+            ],
 
         },
         {
@@ -29,6 +39,29 @@ module.exports = {
         },
         {
             test:/\.(?:ico|gif|png|jpeg|jpg)$/,
+            use: [
+                {
+                  loader: 'image-webpack-loader',
+                  options: {
+                    mozjpeg: {
+                      progressive: true,
+                    },
+                    optipng: {
+                      enabled: false,
+                    },
+                    pngquant: {
+                      quality: [0.65, 0.90],
+                      speed: 4
+                    },
+                    gifsicle: {
+                      interlaced: false,
+                    },
+                    webp: {
+                      quality: 75
+                    }
+                  }
+                },
+              ],
             type: 'asset/resource',
             generator:{
                 filename:'images/[name]-[hash:5][ext]',
