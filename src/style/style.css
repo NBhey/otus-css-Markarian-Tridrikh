@@ -37,6 +37,7 @@
     background-image:url(/src/img/image.jpg);
     background-repeat: no-repeat;
     background-size:cover;
+    width: 100%;
 }
 .header__area {
     position: absolute;
