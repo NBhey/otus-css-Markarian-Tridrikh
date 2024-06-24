@@ -16,9 +16,14 @@ module.exports = {
             template: path.resolve(__dirname, './src/index.html'), 
              filename: 'index.html', 
     }),
+        new MiniCssExtractPlugin()
     ],
     module: {
         rules: [
+            {
+                test: /\.html$/,
+               use: "html-loader",
+           },
         {
             test: /\.(sass|css|scss)$/i,
             use: ["style-loader", "css-loader","postcss-loader",
@@ -35,35 +40,9 @@ module.exports = {
                 },
             ],
         },
-        {
-             test: /\.html$/,
-            use: "html-loader",
-        },
+        
         {
             test:/\.(?:ico|gif|png|jpeg|jpg)$/,
-            use: [
-                {
-                  loader: 'image-webpack-loader',
-                  options: {
-                    mozjpeg: {
-                      progressive: true,
-                    },
-                    optipng: {
-                      enabled: false,
-                    },
-                    pngquant: {
-                      quality: [0.65, 0.90],
-                      speed: 4
-                    },
-                    gifsicle: {
-                      interlaced: false,
-                    },
-                    webp: {
-                      quality: 75
-                    }
-                  }
-                },
-              ],
             type: 'asset/resource',
             generator:{
                 filename:'images/[name]-[hash:5][ext]',
